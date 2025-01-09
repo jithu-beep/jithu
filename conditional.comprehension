@@ -1,0 +1,289 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "8ffa6719-fe34-4755-8683-c9cd4964164b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = 6\n",
+    "if num %2 == 0:\n",
+    "    print(\"even\")\n",
+    "else:\n",
+    "    print(\"odd\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "6ebed156-dcf3-49fd-9af9-23bd835ef2f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input())\n",
+    "print(\"even\") if num%2==0 else print (\"Odd\") "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "5983d480-5241-4df3-8618-809769f1a605",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 45\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Positive\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input())\n",
+    "print(\"Positive\") if num>0 else print(\"Negative\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "9a3280a7-658e-4769-809b-8ab133ceb3d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 0\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'zero'"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "num=int(input())\n",
+    "print(\"Positive\") if num>0 else (\"Negative\" if num < 0 else \"zero\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "7cac1dbe-ad53-4a94-8632-6d80471fa98a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 18, 4, 20, 112, 178]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L=[1,9,2,10,56,89]\n",
+    "[2*x for x in L]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "e55c428b-11c2-4b96-b72d-dc00d4de7bfd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 6, 8, 0, 4]"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L=[2,3,5,6,8,0,4]\n",
+    "[x for x in L if x%2 == 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "3ec895b1-cfcc-42ff-af1a-1659486fcfba",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 5, 3, 7, 9]"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l=[1,2,4,5,6,3,7,9]\n",
+    "[x for x in l if x%2 !=0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "7e894238-e939-484f-9c27-edb0d52fcb27",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 10, 56]"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L=[1,9,2,10,56,89]\n",
+    "[x for x in L if x%2 == 0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "bfb0792a-0330-4219-b8ba-3cc8187c3219",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "27.833333333333332"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "L=[1,9,2,10,56,89]\n",
+    "sum([ x for x in L])/len(L)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "42d0b5a2-1bd8-421f-b422-e1bf6c926ccb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Ram': [70, 71, 98, 100], 'John': [56, 98, 67, 65]}"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d1 = {'Ram':[70,71,98,100], 'John':[56,98,67,65]}\n",
+    "d1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "98d25ec9-6a46-4741-8337-65115d71f225",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Ram': 84.75, 'John': 71.5}"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "{k:sum(v)/len(v) for k,v in d1.items()}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "abf60d5d-92b1-4458-93a4-a08f507ed83b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
